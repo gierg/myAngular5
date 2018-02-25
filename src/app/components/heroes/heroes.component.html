@@ -1,0 +1,13 @@
+<h1>{{pageTitle}}</h1>
+
+<h3>{{hero.firstName}} {{hero.lastName}}</h3>
+<ul>
+    <li>Age: {{hero.age}}</li>
+    <li>Skill: {{hero.skill}}</li>
+</ul>
+
+<h2>News</h2>
+<div *ngFor="let item of news; let i = index">
+    <h3>{{i + 1}}. {{item.title}}</h3>
+    <p>{{item.body}}</p>
+</div>
